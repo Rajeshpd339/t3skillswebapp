@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .showpdf {
+    width: 100%;
+    margin-top: 12vh;
+    color: black;
+    margin-left: 1%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Adjust the gap between items */
+  }
+  
+  .showpdf p {
+    font-size: 20px; /* Adjust the font size as needed */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    line-height: 1.6; /* Adjust the line height for better readability */
+  }
+  
+  .showpdf button {
+    font-size: 16px; /* Adjust the font size for buttons */
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    background-color: rgb(25, 252, 25); /* Add background color for buttons */
+    border: none;
+    padding: 10px 20px; /* Increase padding for a larger button */
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth button hover effect */
+  }
+  
+  .showpdf button:hover {
+    background-color: green; /* Button color on hover */
+  }
+  
+  .D {
+    width: calc(50% - 10px); /* Adjust the width of each item (two items per row) */
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+  }
+  
+  .D h3 {
+    font-size: 20px; /* Adjust the font size for headings */
+    margin-bottom: 10px; /* Adjust spacing between heading and button */
+  }
+  
+  .download-button {
+    margin-top: 10px; /* Adjust the margin for the button */
+  }
+  
+  /* Responsive Styles */
+  @media screen and (max-width: 768px) {
+    .showpdf {
+        flex-direction: column;
+    }
+    
+    .D {
+        width: 100%; /* Full width for items on smaller screens */
+        margin-bottom: 20px; /* Increase spacing between items */
+    }
+  }
+  

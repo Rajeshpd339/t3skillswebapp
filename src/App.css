@@ -1,0 +1,12 @@
+/* App.css */
+/* Add styles for the fixed class */
+.skills-container.fixed {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2; /* Ensure it appears above the content */
+  }
+  
+  mari
+  /* Adjust other styles as needed */
+  

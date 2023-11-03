@@ -1,0 +1,83 @@
+/* Reset styles for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navigation bar styles */
+nav {
+    width: 100%;
+    height: 5.8vh;
+    text-align: center;
+    background-color: darkblue;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Increase the z-index to ensure it's above other content */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Add a hamburger icon for small screens */
+.hamburger-icon {
+    display: none; /* Initially hidden */
+    cursor: pointer;
+    padding: 10px;
+    color: white;
+    font-size: 24px;
+}
+
+/* Navigation links styles */
+nav a {
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    margin: 0 20px; /* Add some spacing between links */
+    transition: color 0.5s; /* Smooth color transition on hover */
+}
+
+/* Responsive styles for navigation links */
+@media screen and (max-width: 768px) {
+    .hamburger-icon {
+        display: block; /* Display the hamburger icon for small screens */
+    }
+
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    nav {
+        flex-direction: row;
+        height: 18.5vh;
+        flex-wrap: wrap;
+        text-align: center;
+        padding: 20px 0; /* Add padding to the top and bottom */
+    }
+    nav a {
+        font-size: 15px;
+    }
+
+    nav.active {
+        height: auto; /* Display all links when the menu is active */
+    }
+
+    nav.active .hamburger-icon {
+        display: none; /* Hide the hamburger icon when the menu is active */
+    }
+
+    nav.active a {
+        display: block; /* Display links when the menu is active */
+    }
+
+    /* Styles for links on hover */
+    nav a:hover {
+        color: yellow;
+        text-decoration: underline;
+        transition: color 0.5s;
+    }
+}

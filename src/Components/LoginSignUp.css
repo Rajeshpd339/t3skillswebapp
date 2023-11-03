@@ -1,0 +1,102 @@
+/* Common styles for all devices */
+
+/* Container for the entire form */
+.all {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  background-color: #f0f0f0;
+}
+
+/* Form container */
+.signupclass {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+  margin-top: 19vh;
+}
+
+/* Title styling */
+.sign h1 {
+  font-size: 20px;
+  color: #333;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.sign span {
+  color: #007bff;
+}
+
+/* Form field styling */
+.name .input-group {
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+}
+
+.name .input-group label {
+  /* Remove width and margin-right */
+  font-size: 16px;
+  color: #555;
+}
+
+.name .input-group input {
+  flex: 1;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.name .input-group button {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Styling for the submit button */
+.submit-button button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.submit-button button:hover {
+  background-color: #0056b3;
+}
+
+/* Registration link styling */
+.reg p {
+  font-size: 20px;
+  color: #555;
+  text-align: center;
+  font-style: italic;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  /* Adjust styles for screens with a max width of 768px (tablets) */
+  .signupclass {
+    max-width: 90%; /* Reduce the max-width to fit smaller screens */
+  }
+
+  /* Additional adjustments for smaller screens as needed */
+}
+
+@media (max-width: 480px) {
+  /* Adjust styles for screens with a max width of 480px (mobile devices) */
+  .signupclass {
+    padding: 10px; /* Reduce padding for smaller screens */
+  }
+
+  /* Additional adjustments for smaller screens as needed */
+}

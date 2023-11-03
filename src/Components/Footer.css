@@ -1,0 +1,10 @@
+.ft{
+    width: 100%;
+    line-height: 30px;
+    background-color: rgb(54, 52, 52);
+    color: white;
+    text-align: center;
+    font-style: italic;
+    z-index: 5;
+
+}
